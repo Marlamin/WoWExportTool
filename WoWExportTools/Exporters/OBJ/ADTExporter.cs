@@ -73,8 +73,8 @@ namespace OBJExporterUI.Exporters.OBJ
             var adtStartY = ((reader.adtfile.y - 32) * TileSize) * -1;
 
             // Calculate first chunk offset in world coordinates
-            var initialChunkX = adtStartY + (reader.adtfile.chunks[0].header.indexX * ChunkSize) * -1;
-            var initialChunkY = adtStartX + (reader.adtfile.chunks[0].header.indexY * ChunkSize) * -1;
+            var initialChunkX = adtStartX + (reader.adtfile.chunks[0].header.indexX * ChunkSize) * -1;
+            var initialChunkY = adtStartY + (reader.adtfile.chunks[0].header.indexY * ChunkSize) * -1;
 
             uint ci = 0;
             for (var x = 0; x < 16; x++)
